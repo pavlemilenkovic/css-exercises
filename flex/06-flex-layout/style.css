@@ -2,6 +2,8 @@
 
 body {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
@@ -23,4 +25,64 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-links {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.right-links {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  padding-right: 10px;
+}
+
+ul {
+  list-style-type: none;
+  color: rgb(69, 67, 67);
+}
+
+.left-links a,
+.right-links a {
+  color: rgb(65, 65, 65);
+  text-decoration: none; /* Remove the underline */
+}
+
+.left-links a:visited,
+.right-links a:visited {
+  color: rgb(65, 65, 65); /* Keep the same color for visited links */
+  text-decoration: none; /* Remove the underline for visited links */
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;  
+  background-color: #eee;
 }
